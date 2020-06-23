@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "vectorcoder\\laravel-installer\\": "src/"
+            "Vectorcoder\\LaravelInstaller\\": "src/"
         },
         "files": [
             "src/Helpers/functions.php"
@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                    "vectorcoder\\laravel-installer\\Providers\\LaravelInstallerServiceProvider"
+                    "Vectorcoder\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
                 
             ]
         }
