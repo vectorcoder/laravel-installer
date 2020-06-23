@@ -24,9 +24,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                {
                     "vectorcoder\\laravel-installer\\Providers\\LaravelInstallerServiceProvider"
-                }
+                
             ]
         }
     },
