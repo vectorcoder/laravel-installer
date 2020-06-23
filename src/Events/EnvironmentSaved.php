@@ -1,6 +1,6 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Events;
+namespace Vectorcoder\LaravelInstaller\Events;
 
 use Illuminate\Http\Request;
 use Illuminate\Queue\SerializesModels;

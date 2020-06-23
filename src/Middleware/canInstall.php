@@ -1,6 +1,6 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Middleware;
+namespace Vectorcoder\LaravelInstaller\Middleware;
 
 use Closure;
 use DB;

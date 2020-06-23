@@ -1,13 +1,13 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Controllers;
+namespace Vectorcoder\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use vectorcoder\LaravelInstaller\Helpers\EnvironmentManager;
-use vectorcoder\LaravelInstaller\Helpers\FinalInstallManager;
-use vectorcoder\LaravelInstaller\Helpers\InstalledFileManager;
-use vectorcoder\LaravelInstaller\Events\LaravelInstallerFinished;
-use vectorcoder\LaravelInstaller\Helpers\DatabaseManager;
+use Vectorcoder\LaravelInstaller\Helpers\EnvironmentManager;
+use Vectorcoder\LaravelInstaller\Helpers\FinalInstallManager;
+use Vectorcoder\LaravelInstaller\Helpers\InstalledFileManager;
+use Vectorcoder\LaravelInstaller\Events\LaravelInstallerFinished;
+use Vectorcoder\LaravelInstaller\Helpers\DatabaseManager;
 use DB;
 
 class FinalController extends Controller

@@ -1,12 +1,12 @@
 <?php
 
-Route::group(['namespace' => 'vectorcoder\LaravelInstaller\Controllers','middleware' => ['web', 'install']], function() {
+Route::group(['namespace' => 'Vectorcoder\LaravelInstaller\Controllers','middleware' => ['web', 'install']], function() {
 Route::get('error/{var}', [
     'uses' => 'WelcomeController@error'
  ]);
 });
 
-Route::group(['prefix' => 'install','as' => 'LaravelInstaller::','namespace' => 'vectorcoder\LaravelInstaller\Controllers','middleware' => ['web', 'install']], function() {
+Route::group(['prefix' => 'install','as' => 'LaravelInstaller::','namespace' => 'Vectorcoder\LaravelInstaller\Controllers','middleware' => ['web', 'install']], function() {
     Route::get('/', [
         'as' => 'welcome',
         'uses' => 'WelcomeController@welcome'
@@ -60,7 +60,7 @@ Route::group(['prefix' => 'install','as' => 'LaravelInstaller::','namespace' => 
 
 });
 
-Route::group(['prefix' => 'update','as' => 'LaravelUpdater::','namespace' => 'vectorcoder\LaravelInstaller\Controllers','middleware' => 'web'],function() {
+Route::group(['prefix' => 'update','as' => 'LaravelUpdater::','namespace' => 'Vectorcoder\LaravelInstaller\Controllers','middleware' => 'web'],function() {
     Route::group(['middleware' => 'update'], function() {
 
         Route::get('/', [

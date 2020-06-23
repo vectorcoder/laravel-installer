@@ -1,6 +1,6 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Events;
+namespace Vectorcoder\LaravelInstaller\Events;
 
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Events\Dispatchable;

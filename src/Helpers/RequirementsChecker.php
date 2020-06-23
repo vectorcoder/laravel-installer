@@ -1,6 +1,6 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Helpers;
+namespace Vectorcoder\LaravelInstaller\Helpers;
 
 class RequirementsChecker
 {

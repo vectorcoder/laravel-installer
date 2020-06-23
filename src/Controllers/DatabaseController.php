@@ -1,9 +1,9 @@
 <?php
 
-namespace vectorcoder\LaravelInstaller\Controllers;
+namespace Vectorcoder\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use vectorcoder\LaravelInstaller\Helpers\DatabaseManager;
+use Vectorcoder\LaravelInstaller\Helpers\DatabaseManager;
 
 class DatabaseController extends Controller
 {
