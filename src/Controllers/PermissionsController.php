@@ -1,10 +1,10 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Controllers;
+namespace vectorcoder\LaravelInstaller\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Routing\Controller;
-use RehanTariq\LaravelInstaller\Helpers\PermissionsChecker;
+use vectorcoder\LaravelInstaller\Helpers\PermissionsChecker;
 use Session;
 
 class PermissionsController extends Controller

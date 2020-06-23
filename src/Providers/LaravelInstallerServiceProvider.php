@@ -1,11 +1,11 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Providers;
+namespace vectorcoder\LaravelInstaller\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use RehanTariq\LaravelInstaller\Middleware\canInstall;
-use RehanTariq\LaravelInstaller\Middleware\canUpdate;
+use vectorcoder\LaravelInstaller\Middleware\canInstall;
+use vectorcoder\LaravelInstaller\Middleware\canUpdate;
 
 class LaravelInstallerServiceProvider extends ServiceProvider
 {

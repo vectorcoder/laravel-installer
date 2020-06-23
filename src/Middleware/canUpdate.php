@@ -1,13 +1,13 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Middleware;
+namespace vectorcoder\LaravelInstaller\Middleware;
 
 use Closure;
-use RehanTariq\LaravelInstaller\Middleware\canInstall;
+use vectorcoder\LaravelInstaller\Middleware\canInstall;
 
 class canUpdate
 {
-    use \RehanTariq\LaravelInstaller\Helpers\MigrationsHelper;
+    use \vectorcoder\LaravelInstaller\Helpers\MigrationsHelper;
 
     /**
      * Handle an incoming request.

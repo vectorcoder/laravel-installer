@@ -1,6 +1,6 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Controllers;
+namespace vectorcoder\LaravelInstaller\Controllers;
 
 use App\Http\Controllers\Controller;
 
