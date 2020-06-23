@@ -1,11 +1,13 @@
 {
     "name": "mobileapps.vectorcoder/laravel-installer",
     "description": "Laravel web installer",
-    "license": "Vectorcoder",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Nasir Ali",
-            "email": "php.vectorcoder@gmail.com"
+            "name": "Amir Saleem",
+            "homepage": "https://gitlab.com/mobileapps.vectorcoder",
+            "role": "Manager",
+            "email": "mobileapps.vectorcoder@gmail.com"
         }
     ],
     "require": {
