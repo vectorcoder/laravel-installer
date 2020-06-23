@@ -1,11 +1,11 @@
 {
-    "name": "mobileapps.vectorcoder/laravel-installer",
+    "name": "vectorcoder/laravel-installer",
     "description": "Laravel web installer",
     "license": "MIT",
     "authors": [
         {
-            "name": "Amir Saleem",
-            "homepage": "https://gitlab.com/mobileapps.vectorcoder",
+            "name": "Saqib Ali",
+            "homepage": "https://github.com/vectorcoder/laravel-installer",
             "role": "Manager",
             "email": "mobileapps.vectorcoder@gmail.com"
         }
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mobileapps.vectorcoder/laravel-installer\\LaravelInstaller\\": "src/"
+            "vectorcoder/laravel-installer\\LaravelInstaller\\": "src/"
         },
         "files": [
             "src/Helpers/functions.php"
@@ -26,7 +26,7 @@
             "providers": [
                 {
                     "type": "vcs",
-                    "url": "https://gitlab.com/mobileapps.vectorcoder/laravel-installer/"
+                    "url": "https://github.com/vectorcoder/laravel-installer/"
                 }
             ]
         }
