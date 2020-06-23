@@ -1,14 +1,14 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Controllers;
+namespace vectorcoder\LaravelInstaller\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Core\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
-use RehanTariq\LaravelInstaller\Helpers\EnvironmentManager;
-use RehanTariq\LaravelInstaller\Helpers\DatabaseManager;
-use RehanTariq\LaravelInstaller\Events\EnvironmentSaved;
+use vectorcoder\LaravelInstaller\Helpers\EnvironmentManager;
+use vectorcoder\LaravelInstaller\Helpers\DatabaseManager;
+use vectorcoder\LaravelInstaller\Events\EnvironmentSaved;
 use Validator;
 use Session;
 use Illuminate\Validation\Rule;

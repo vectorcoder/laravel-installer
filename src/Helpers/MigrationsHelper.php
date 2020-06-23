@@ -1,6 +1,6 @@
 <?php
 
-namespace RehanTariq\LaravelInstaller\Helpers;
+namespace vectorcoder\LaravelInstaller\Helpers;
 use Illuminate\Support\Facades\DB;
 
 trait MigrationsHelper {
