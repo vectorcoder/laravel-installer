@@ -22,8 +22,8 @@ class RequirementsChecker
     {
         $results = [];
         $extensions_limit_array = array('max_execution_time'=> 180, 'upload_max_filesize'=> 128, 'post_max_size'=> 128);
-        $results['extensions_limit_array'] = $extensions_limit_array;
-
+        $results['extensions_limit_array'] = $extensions_limit_array;        
+        $results['errors'] = '';
         foreach($requirements as $type => $requirement)
         {
             switch ($type) {
@@ -52,7 +52,7 @@ class RequirementsChecker
                                  // 1 => readable handle connected to child stdout
                                  // Any error output will be appended to /tmp/error-output.txt
                              
-                                 fwrite($pipes[0], '<?php print_r($_ENV); ?>');
+                                 fwrite($pipes[0], '');
                                  fclose($pipes[0]);
                              
                                  echo stream_get_contents($pipes[1]);
