@@ -38,7 +38,7 @@ class RequirementsController extends Controller
             'intl',
             'ctype',
             'proc_open',
-            'zlib',
+            'zip',
             'gd',
             'max_execution_time',
             'upload_max_filesize',

@@ -64,7 +64,7 @@
         </ul>
     @endforeach
 
-    @if ( ! isset($requirements['errors']) && $phpSupportInfo['supported'] )
+    @if ( !$requirements['errors'] && $phpSupportInfo['supported'] )
         <div class="buttons">
             <a class="button" href="{{ route('LaravelInstaller::permissions') }}">
                 Next
