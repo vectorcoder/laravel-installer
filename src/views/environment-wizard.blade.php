@@ -43,13 +43,13 @@
         <form method="post" action="{{ route('LaravelInstaller::environmentSaveWizard') }}" class="tabs-wrap">
             <div class="tab" id="tab1content">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <input type="hidden" name="app_version" value="4.0.14">
+                <input type="hidden" name="app_version" value="4.0.17">
 
                 <div class="form-group {{ $errors->has('app_version') ? ' has-error ' : '' }}">
                     <label for="app_version">
                         Code Version
                     </label>
-                    <input type="text" name="app_version" id="app_version" value="4.0.14" placeholder="Code Version" disabled/>
+                    <input type="text" name="app_version" id="app_version" value="4.0.17" placeholder="Code Version" disabled/>
                     @if ($errors->has('app_version'))
                         <span class="error-block">
                             <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
