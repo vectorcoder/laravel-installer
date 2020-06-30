@@ -118,7 +118,6 @@ class EnvironmentController extends Controller
       ),
       'app_log_level'         => 'required|string|max:50',
       'app_url'               => 'required|url',
-      'app_version'           => 'required',
       'database_connection'   => 'required|string|max:50',
       'database_hostname'     => 'required|string|max:50',
       'database_port'         => 'required|numeric',
@@ -163,7 +162,6 @@ class EnvironmentController extends Controller
         return redirect()->back()->withInput($request->all())->withErrors($validator);
     }
 
-    session(['app_version'=>$request->app_version]);
 
     $purchase_code = $request->purchase_code;
       // Check for empty fields

@@ -100,7 +100,7 @@ class EnvironmentManager
         }
 
         $envFileData =
-        'APP_VERSION=\'' . $request->app_version . "'\n" .
+        'APP_VERSION=\'' . "'\n" .
         'APP_NAME=\'' . $request->app_name . "'\n" .
         'APP_ENV=' . $request->environment . "\n" .
         'APP_KEY=' . 'base64:bODi8VtmENqnjklBmNJzQcTTSC8jNjBysfnjQN59btE=' . "\n" .
