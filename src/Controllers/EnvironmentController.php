@@ -180,7 +180,7 @@ class EnvironmentController extends Controller
         return redirect()->back()->withInput($request->all())->withErrors($messages);
       }elseif(isset($response->id) and !empty($response->id)){
           $purchase_id = $response->id;
-          $ids = array("26827707", "26840547","20952416", "20757378", "22334657");
+          $ids = array("26827707", "26840547","20952416", "20757378", "22334657", "28681648", "27944998");
 
           if(!in_array($purchase_id,$ids)){
 
