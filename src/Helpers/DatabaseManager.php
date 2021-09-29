@@ -70,7 +70,7 @@ class DatabaseManager
      * @param collection $outputLog
      * @return array
      */
-    private function response($message, $status = 'danger', $outputLog)
+    private function response($message, $status, $outputLog)
     {
         return [
             'status' => $status,

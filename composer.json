@@ -1,11 +1,11 @@
 {
-    "name": "vectorcoder/laravel-installer",
-    "description": "Laravel web installer",
+    "name": "vectorcoder/rawal",
+    "description": "Rawal - Laravel web installer",
     "license": "MIT",
     "authors": [
         {
             "name": "Saqib Ali",
-            "homepage": "https://github.com/vectorcoder/laravel-installer",
+            "homepage": "https://github.com/vectorcoder/rawal",
             "role": "Manager",
             "email": "mobileapps.vectorcoder@gmail.com"
         }

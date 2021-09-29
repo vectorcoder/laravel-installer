@@ -75,9 +75,13 @@
                         <p class="alert text-center">
                             <strong>
                                 @if(is_array(session('message')))
+                                    @if(!preg_match('/1062/i', session('message')['message']))
                                     {{ session('message')['message'] }}
+                                    @endif
                                 @else
+                                    @if(!preg_match('/1062/i', session('message')))
                                     {{ session('message') }}
+                                    @endif
                                 @endif
                             </strong>
                         </p>

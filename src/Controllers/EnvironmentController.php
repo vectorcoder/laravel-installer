@@ -3,7 +3,6 @@
 namespace Vectorcoder\LaravelInstaller\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Core\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Vectorcoder\LaravelInstaller\Helpers\EnvironmentManager;
@@ -24,7 +23,7 @@ class EnvironmentController extends Controller
     protected $EnvironmentManager;
     private $databaseManager;
     private $ticketRepository;
-    private $api_url = 'http://api.themes-coder.com';
+    private $api_url = 'https://api.themes-coder.com';
     /**
      * @param EnvironmentManager $environmentManager
      */
@@ -139,11 +138,6 @@ class EnvironmentController extends Controller
       'pusher_app_id'         => 'max:50',
       'pusher_app_key'        => 'max:50',
       'pusher_app_secret'     => 'max:50',
-      'user_name'             => 'required|string|max:50',
-      'first_name'            => 'required|string|max:50',
-      'last_name'             => 'required|string|max:50',
-      'email'                 => 'required|email',
-      'password'              => 'required||min:5|confirmed',
       'purchase_code'         => 'required',
       // 'database_password'     => 'required'
 
@@ -201,17 +195,7 @@ class EnvironmentController extends Controller
         Artisan::call('config:cache'); 
         $response = $this->databaseManager->migrateAndSeed();
 
-        //store admin
-        $user = new User();
-        $data = array(
-          'user_name'   =>  $request->user_name,
-          'first_name'  =>  $request->first_name,
-          'last_name'   =>  $request->last_name,
-          'email'       =>  $request->email,
-          'password'    =>  $request->password
-        );
-
-        $user->saveAdmin($data);
+       
         event(new EnvironmentSaved($request));
 
         return $redirect->route('LaravelInstaller::database')

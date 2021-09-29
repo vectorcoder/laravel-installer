@@ -23,7 +23,8 @@ class FinalController extends Controller
 
         $response = $databaseManager->migrateAndSeed();
         $finalMessages = $finalInstall->runFinal();
-        if($response['status'] != 'error' && $finalMessages == ''){
+       
+        if($finalMessages != ''){
 
           if(config('app.url') == 'production'){
             $environments = 'Live';
@@ -31,9 +32,9 @@ class FinalController extends Controller
             $environments = 'Maintenance';
           }
 
-          DB::table('settings')->where('name', 'external_website_link')->update([	 'value' => config('app.url')]);
-          DB::table('settings')->where('name', 'app_name')->update(['value' => config('app.name')]);
-          DB::table('settings')->where('name', 'environment')->update(['value' => $environments]);
+          DB::table('settings')->where('key', 'external_website_link')->update([	 'value' => config('app.url')]);
+          DB::table('settings')->where('key', 'app_name')->update(['value' => config('app.name')]);
+          DB::table('settings')->where('key', 'environment')->update(['value' => $environments]);
 
           $finalStatusMessage = $fileManager->update();
         }else{

@@ -11,10 +11,10 @@
 
 @section('container')
 
-	@if(session('message')['dbOutputLog'])
+	{{-- @if(session('message')['dbOutputLog'])
 		<p><strong><small>Migration &amp; Seed Console Output:</small></strong></p>
 		<pre><code>{{ session('message')['dbOutputLog'] }}</code></pre>
-	@endif
+	@endif --}}
 
 	<p><strong><small>Application Console Output:</small></strong></p>
 	<pre><code>{{ $finalMessages }}</code></pre>
