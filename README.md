@@ -1,4 +1,4 @@
-# Laravel Web Installer | A Web Installer [Package](https://packagist.org/packages/vectorcoder/rawal)
+# Laravel Web Installer | A Web Installer [Package](https://packagist.org/packages/vectorcoder/laravel-installer)
 
 [![Latest Stable Version](http://poser.pugx.org/vectorcoder/laravel-installer/v)](https://packagist.org/packages/vectorcoder/laravel-installer) [![Total Downloads](http://poser.pugx.org/vectorcoder/laravel-installer/downloads)](https://packagist.org/packages/vectorcoder/laravel-installer) [![Latest Unstable Version](http://poser.pugx.org/vectorcoder/laravel-installer/v/unstable)](https://packagist.org/packages/vectorcoder/laravel-installer) [![License](http://poser.pugx.org/vectorcoder/laravel-installer/license)](https://packagist.org/packages/vectorcoder/laravel-installer) [![PHP Version Require](http://poser.pugx.org/vectorcoder/laravel-installer/require/php)](https://packagist.org/packages/vectorcoder/laravel-installer)
 
