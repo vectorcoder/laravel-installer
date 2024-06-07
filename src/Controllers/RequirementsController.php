@@ -45,7 +45,7 @@ class RequirementsController extends Controller
             'post_max_size',
         ));
 
-        $minPhpVersion = 'PHP 7.2';
+        $minPhpVersion = 'PHP 8.2';
 
         $phpSupportInfo = $this->requirements->checkPHPversion(
             $minPhpVersion
