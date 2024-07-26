@@ -189,10 +189,10 @@ class EnvironmentController extends Controller
         if(file_exists(base_path('bootstrap/cache/config.php'))){
          unlink(base_path('bootstrap/cache/config.php'));
         }
-        Artisan::call('cache:clear');
-        Artisan::call('config:clear');
+        // Artisan::call('cache:clear');
+        // Artisan::call('config:clear');
         $results = $this->EnvironmentManager->saveFileWizard($request);
-        Artisan::call('config:cache'); 
+        // Artisan::call('config:cache'); 
         $response = $this->databaseManager->migrateAndSeed();
 
        
